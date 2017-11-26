@@ -44,9 +44,9 @@ function getIdVideo($_link)
     return $idVideo;
 }
  
-function getLinkPublicVideo($_id)
+function getLinkPublicVideo($_link)
 {
-    $video_id = getIdVideo($_id);
+    $video_id = getIdVideo($_link);
     $link = 'https://www.facebook.com/video/embed?video_id=' . $video_id;
  
     $getPage = curl($link);
